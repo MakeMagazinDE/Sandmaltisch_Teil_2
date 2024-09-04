@@ -1,0 +1,136 @@
+{
+	"version": "1.0.0",
+	"effects": {
+		"ids": [
+			"768fb422-d4a2-4f6a-b7d4-b05ac5672eac",
+			"1dc97780-89d8-4cb7-89f5-571dbd094430",
+			"c89bacf5-7f2a-43e1-abe4-39b65928b2d5"
+		],
+		"entities": {
+			"768fb422-d4a2-4f6a-b7d4-b05ac5672eac": {
+				"transformMethod": "smear",
+				"numLoops": 120,
+				"growEnabled": true,
+				"growValue": 33,
+				"growMethod": "function",
+				"growMathInput": "i+cos(i/2)",
+				"growMath": "i+cos(i/2)",
+				"spinEnabled": true,
+				"spinValue": 1.8,
+				"spinMethod": "constant",
+				"spinMathInput": "10*sin(i/4)",
+				"spinMath": "10*sin(i/4)",
+				"spinSwitchbacks": 0,
+				"type": "loop",
+				"visible": true,
+				"name": "loop",
+				"layerId": "47765700-fa60-4084-b8d5-cce5ba064f9b",
+				"id": "768fb422-d4a2-4f6a-b7d4-b05ac5672eac"
+			},
+			"1dc97780-89d8-4cb7-89f5-571dbd094430": {
+				"transformMethod": "intact",
+				"numLoops": 4,
+				"growEnabled": true,
+				"growValue": 135,
+				"growMethod": "constant",
+				"growMathInput": "i+cos(i/2)",
+				"growMath": "i+cos(i/2)",
+				"spinEnabled": false,
+				"spinValue": 2,
+				"spinMethod": "constant",
+				"spinMathInput": "10*sin(i/4)",
+				"spinMath": "10*sin(i/4)",
+				"spinSwitchbacks": 0,
+				"type": "loop",
+				"visible": true,
+				"name": "loop",
+				"layerId": "cf1e9e7d-d8c1-4e65-bfcc-ce95b37fc72e",
+				"id": "1dc97780-89d8-4cb7-89f5-571dbd094430"
+			},
+			"c89bacf5-7f2a-43e1-abe4-39b65928b2d5": {
+				"drawPortionPct": 100,
+				"backtrackPct": 20.4,
+				"rotateStartingPct": 0,
+				"reverse": false,
+				"drawBorder": false,
+				"type": "fineTuning",
+				"visible": true,
+				"name": "fine tuning",
+				"layerId": "cf1e9e7d-d8c1-4e65-bfcc-ce95b37fc72e",
+				"id": "c89bacf5-7f2a-43e1-abe4-39b65928b2d5"
+			}
+		}
+	},
+	"layers": {
+		"ids": [
+			"47765700-fa60-4084-b8d5-cce5ba064f9b",
+			"b600c6b9-c9bb-46c4-b3ba-d3a7ea856903",
+			"cf1e9e7d-d8c1-4e65-bfcc-ce95b37fc72e"
+		],
+		"entities": {
+			"47765700-fa60-4084-b8d5-cce5ba064f9b": {
+				"reuleauxSides": 4,
+				"type": "reuleaux",
+				"connectionMethod": "along perimeter",
+				"x": 0,
+				"y": 0,
+				"width": 20,
+				"height": 20,
+				"aspectRatio": 1,
+				"rotation": 0,
+				"visible": true,
+				"name": "reuleaux",
+				"effectIds": [
+					"768fb422-d4a2-4f6a-b7d4-b05ac5672eac"
+				],
+				"id": "47765700-fa60-4084-b8d5-cce5ba064f9b",
+				"dragging": false,
+				"maintainAspectRatio": true
+			},
+			"cf1e9e7d-d8c1-4e65-bfcc-ce95b37fc72e": {
+				"type": "heart",
+				"connectionMethod": "line",
+				"x": 0,
+				"y": 0,
+				"width": 47,
+				"height": 42.3,
+				"aspectRatio": 1.1111111111111112,
+				"rotation": -90,
+				"visible": true,
+				"name": "heart",
+				"effectIds": [
+					"1dc97780-89d8-4cb7-89f5-571dbd094430",
+					"c89bacf5-7f2a-43e1-abe4-39b65928b2d5"
+				],
+				"id": "cf1e9e7d-d8c1-4e65-bfcc-ce95b37fc72e",
+				"dragging": false,
+				"maintainAspectRatio": true
+			},
+			"b600c6b9-c9bb-46c4-b3ba-d3a7ea856903": {
+				"type": "point",
+				"connectionMethod": "line",
+				"x": 0,
+				"y": 0,
+				"width": 1,
+				"height": 1,
+				"aspectRatio": 1,
+				"rotation": 0,
+				"visible": true,
+				"name": "point",
+				"effectIds": [],
+				"id": "b600c6b9-c9bb-46c4-b3ba-d3a7ea856903"
+			}
+		}
+	},
+	"machine": {
+		"name": "BINGOBRICKS Sandmaltisch",
+		"minimizeMoves": false,
+		"imported": false,
+		"type": "rectangular",
+		"minX": 0,
+		"maxX": 386,
+		"minY": 0,
+		"maxY": 716,
+		"rectOrigin": 0
+	}
+}

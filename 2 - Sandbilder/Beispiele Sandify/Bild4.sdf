@@ -1,0 +1,172 @@
+{
+	"version": "1.0.0",
+	"effects": {
+		"ids": [
+			"e5e2053a-6f92-40db-8dc7-5b30a32d6b57",
+			"09fba18a-885b-4494-99b6-4416b2f7f3a9",
+			"22e58695-6c19-4b3d-aaf7-9b3fa4a852fb",
+			"e096b116-9153-4c93-bf39-54f51889542b"
+		],
+		"entities": {
+			"e5e2053a-6f92-40db-8dc7-5b30a32d6b57": {
+				"transformMethod": "smear",
+				"numLoops": 43,
+				"growEnabled": true,
+				"growValue": 25,
+				"growMethod": "constant",
+				"growMathInput": "i+cos(i/2)",
+				"growMath": "i+cos(i/2)",
+				"spinEnabled": false,
+				"spinValue": 2,
+				"spinMethod": "constant",
+				"spinMathInput": "10*sin(i/4)",
+				"spinMath": "10*sin(i/4)",
+				"spinSwitchbacks": 0,
+				"type": "loop",
+				"visible": true,
+				"name": "loop",
+				"layerId": "7d4ac11a-7a19-4a21-80c7-6a190d9394a0",
+				"id": "e5e2053a-6f92-40db-8dc7-5b30a32d6b57"
+			},
+			"09fba18a-885b-4494-99b6-4416b2f7f3a9": {
+				"fisheyeDistortion": -1,
+				"fisheyeSubsample": true,
+				"width": 222,
+				"height": 222,
+				"maintainAspectRatio": true,
+				"type": "fisheye",
+				"visible": false,
+				"name": "fisheye",
+				"aspectRatio": 1,
+				"x": 0,
+				"y": 0,
+				"layerId": "7d4ac11a-7a19-4a21-80c7-6a190d9394a0",
+				"id": "09fba18a-885b-4494-99b6-4416b2f7f3a9"
+			},
+			"22e58695-6c19-4b3d-aaf7-9b3fa4a852fb": {
+				"transformMethod": "smear",
+				"numLoops": 12,
+				"growEnabled": true,
+				"growValue": 25,
+				"growMethod": "constant",
+				"growMathInput": "i+cos(i/2)",
+				"growMath": "i+cos(i/2)",
+				"spinEnabled": false,
+				"spinValue": 2,
+				"spinMethod": "constant",
+				"spinMathInput": "10*sin(i/4)",
+				"spinMath": "10*sin(i/4)",
+				"spinSwitchbacks": 0,
+				"type": "loop",
+				"visible": true,
+				"name": "loop",
+				"layerId": "1b6db9a9-690b-4e33-9d39-9128e5461295",
+				"id": "22e58695-6c19-4b3d-aaf7-9b3fa4a852fb"
+			},
+			"e096b116-9153-4c93-bf39-54f51889542b": {
+				"seed": 1,
+				"noiseAmplitude": 7,
+				"noiseMagnification": 62,
+				"noiseType": "Simplex",
+				"noiseApplication": "Linear",
+				"subsample": true,
+				"type": "noise",
+				"visible": true,
+				"name": "noise",
+				"layerId": "7d4ac11a-7a19-4a21-80c7-6a190d9394a0",
+				"id": "e096b116-9153-4c93-bf39-54f51889542b"
+			}
+		}
+	},
+	"layers": {
+		"ids": [
+			"7d4ac11a-7a19-4a21-80c7-6a190d9394a0",
+			"8f0a331f-78f2-4450-8ee2-5185d0f884e2",
+			"1b6db9a9-690b-4e33-9d39-9128e5461295",
+			"6b8bd4fe-534d-4729-b344-943612f0fcca"
+		],
+		"entities": {
+			"7d4ac11a-7a19-4a21-80c7-6a190d9394a0": {
+				"type": "polygon",
+				"polygonSides": 4,
+				"roundCorners": true,
+				"roundFraction": 0.25,
+				"maintainAspectRatio": true,
+				"connectionMethod": "along perimeter",
+				"x": 0,
+				"y": 0,
+				"width": 100,
+				"height": 100,
+				"aspectRatio": 1,
+				"rotation": 0,
+				"visible": true,
+				"name": "polygon",
+				"effectIds": [
+					"09fba18a-885b-4494-99b6-4416b2f7f3a9",
+					"e096b116-9153-4c93-bf39-54f51889542b",
+					"e5e2053a-6f92-40db-8dc7-5b30a32d6b57"
+				],
+				"id": "7d4ac11a-7a19-4a21-80c7-6a190d9394a0"
+			},
+			"1b6db9a9-690b-4e33-9d39-9128e5461295": {
+				"points": 5,
+				"starRatio": 0.5,
+				"type": "star",
+				"connectionMethod": "line",
+				"x": 0,
+				"y": 0,
+				"width": 95,
+				"height": 100,
+				"aspectRatio": 0.95,
+				"rotation": 0,
+				"visible": true,
+				"name": "star",
+				"effectIds": [
+					"22e58695-6c19-4b3d-aaf7-9b3fa4a852fb"
+				],
+				"id": "1b6db9a9-690b-4e33-9d39-9128e5461295"
+			},
+			"8f0a331f-78f2-4450-8ee2-5185d0f884e2": {
+				"type": "point",
+				"connectionMethod": "line",
+				"x": 194,
+				"y": 135,
+				"width": 1,
+				"height": 1,
+				"aspectRatio": 1,
+				"rotation": 0,
+				"visible": true,
+				"name": "point",
+				"effectIds": [],
+				"id": "8f0a331f-78f2-4450-8ee2-5185d0f884e2",
+				"dragging": false
+			},
+			"6b8bd4fe-534d-4729-b344-943612f0fcca": {
+				"type": "point",
+				"connectionMethod": "along perimeter",
+				"x": 194,
+				"y": -125,
+				"width": 1,
+				"height": 1,
+				"aspectRatio": 1,
+				"rotation": 0,
+				"visible": true,
+				"name": "point",
+				"effectIds": [],
+				"id": "6b8bd4fe-534d-4729-b344-943612f0fcca",
+				"dragging": false
+			}
+		}
+	},
+	"machine": {
+		"name": "BINGOBRICKS Sandmaltisch",
+		"minimizeMoves": false,
+		"imported": false,
+		"type": "rectangular",
+		"minX": 0,
+		"maxX": 386,
+		"minY": 0,
+		"maxY": 716,
+		"rectOrigin": 0
+	}
+}

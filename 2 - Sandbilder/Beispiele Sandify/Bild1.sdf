@@ -1,0 +1,68 @@
+{
+	"version": "1.0.0",
+	"effects": {
+		"ids": [
+			"502ce624-e3d1-4b91-8890-b5ce2139523e"
+		],
+		"entities": {
+			"502ce624-e3d1-4b91-8890-b5ce2139523e": {
+				"transformMethod": "smear",
+				"numLoops": 90,
+				"growEnabled": true,
+				"growValue": 40,
+				"growMethod": "constant",
+				"growMathInput": "i+cos(i/2)",
+				"growMath": "i+cos(i/2)",
+				"spinEnabled": true,
+				"spinValue": 2,
+				"spinMethod": "constant",
+				"spinMathInput": "10*sin(i/4)",
+				"spinMath": "10*sin(i/4)",
+				"spinSwitchbacks": 0,
+				"type": "loop",
+				"visible": true,
+				"name": "Loop",
+				"layerId": "3d1c0619-0679-4aa9-9ea4-8b915e167cbb",
+				"id": "502ce624-e3d1-4b91-8890-b5ce2139523e"
+			}
+		}
+	},
+	"layers": {
+		"ids": [
+			"3d1c0619-0679-4aa9-9ea4-8b915e167cbb"
+		],
+		"entities": {
+			"3d1c0619-0679-4aa9-9ea4-8b915e167cbb": {
+				"type": "polygon",
+				"polygonSides": 4,
+				"roundCorners": false,
+				"roundFraction": 0.25,
+				"maintainAspectRatio": true,
+				"connectionMethod": "along perimeter",
+				"x": 0,
+				"y": 0,
+				"width": 20,
+				"height": 20,
+				"aspectRatio": 1,
+				"rotation": 0,
+				"visible": true,
+				"name": "polygon",
+				"effectIds": [
+					"502ce624-e3d1-4b91-8890-b5ce2139523e"
+				],
+				"id": "3d1c0619-0679-4aa9-9ea4-8b915e167cbb"
+			}
+		}
+	},
+	"machine": {
+		"name": "BINGOBRICKS Sandmaltisch",
+		"minimizeMoves": false,
+		"imported": false,
+		"type": "rectangular",
+		"minX": 0,
+		"maxX": 386,
+		"minY": 0,
+		"maxY": 716,
+		"rectOrigin": 0
+	}
+}

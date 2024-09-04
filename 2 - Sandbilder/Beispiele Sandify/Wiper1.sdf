@@ -1,0 +1,42 @@
+{
+	"version": "1.0.0",
+	"effects": {
+		"ids": [],
+		"entities": {}
+	},
+	"layers": {
+		"ids": [
+			"eb522d50-1cea-4465-864e-2c0c5f320f53"
+		],
+		"entities": {
+			"eb522d50-1cea-4465-864e-2c0c5f320f53": {
+				"wiperAngleDeg": 15,
+				"wiperSize": 2,
+				"wiperType": "Spiral",
+				"type": "wiper",
+				"connectionMethod": "line",
+				"x": 0,
+				"y": 0,
+				"width": 162,
+				"height": 162,
+				"aspectRatio": 1,
+				"rotation": 0,
+				"visible": true,
+				"name": "Wiper",
+				"effectIds": [],
+				"id": "eb522d50-1cea-4465-864e-2c0c5f320f53"
+			}
+		}
+	},
+	"machine": {
+		"name": "BINGOBRICKS Sandmaltisch",
+		"minimizeMoves": false,
+		"imported": false,
+		"type": "rectangular",
+		"minX": 0,
+		"maxX": 386,
+		"minY": 0,
+		"maxY": 716,
+		"rectOrigin": 0
+	}
+}

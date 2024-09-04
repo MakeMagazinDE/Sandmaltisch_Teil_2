@@ -1,0 +1,120 @@
+{
+	"version": "1.0.0",
+	"effects": {
+		"ids": [
+			"72322ba4-ba31-42ad-9b29-a0df4a7cb10e",
+			"92f14ed2-1949-4d91-a80b-753508d9e8c6"
+		],
+		"entities": {
+			"72322ba4-ba31-42ad-9b29-a0df4a7cb10e": {
+				"transformMethod": "smear",
+				"numLoops": 14,
+				"growEnabled": true,
+				"growValue": 17,
+				"growMethod": "constant",
+				"growMathInput": "i+cos(i/2)",
+				"growMath": "i+cos(i/2)",
+				"spinEnabled": false,
+				"spinValue": 2,
+				"spinMethod": "constant",
+				"spinMathInput": "10*sin(i/4)",
+				"spinMath": "10*sin(i/4)",
+				"spinSwitchbacks": 0,
+				"type": "loop",
+				"visible": true,
+				"name": "loop",
+				"layerId": "5b0c25e5-a99f-4feb-81fc-e792b2ce6a6d",
+				"id": "72322ba4-ba31-42ad-9b29-a0df4a7cb10e"
+			},
+			"92f14ed2-1949-4d91-a80b-753508d9e8c6": {
+				"transformMethod": "smear",
+				"numLoops": 112,
+				"growEnabled": true,
+				"growValue": 20,
+				"growMethod": "constant",
+				"growMathInput": "i+cos(i/2)",
+				"growMath": "i+cos(i/2)",
+				"spinEnabled": true,
+				"spinValue": 3.7,
+				"spinMethod": "constant",
+				"spinMathInput": "10*sin(i/4)",
+				"spinMath": "10*sin(i/4)",
+				"spinSwitchbacks": 0,
+				"type": "loop",
+				"visible": true,
+				"name": "loop",
+				"layerId": "0fe244de-04be-441c-a072-5eefbb66b4b3",
+				"id": "92f14ed2-1949-4d91-a80b-753508d9e8c6"
+			}
+		}
+	},
+	"layers": {
+		"ids": [
+			"0fe244de-04be-441c-a072-5eefbb66b4b3",
+			"08428335-8c50-4d69-934a-9ed4d0299588",
+			"5b0c25e5-a99f-4feb-81fc-e792b2ce6a6d"
+		],
+		"entities": {
+			"0fe244de-04be-441c-a072-5eefbb66b4b3": {
+				"reuleauxSides": 9,
+				"type": "reuleaux",
+				"connectionMethod": "line",
+				"x": 0,
+				"y": 0,
+				"width": 33,
+				"height": 33,
+				"aspectRatio": 1,
+				"rotation": 244,
+				"visible": true,
+				"name": "circle",
+				"effectIds": [
+					"92f14ed2-1949-4d91-a80b-753508d9e8c6"
+				],
+				"id": "0fe244de-04be-441c-a072-5eefbb66b4b3"
+			},
+			"08428335-8c50-4d69-934a-9ed4d0299588": {
+				"type": "point",
+				"connectionMethod": "line",
+				"x": 193,
+				"y": -1,
+				"width": 1,
+				"height": 1,
+				"aspectRatio": 1,
+				"rotation": 0,
+				"visible": true,
+				"name": "point",
+				"effectIds": [],
+				"id": "08428335-8c50-4d69-934a-9ed4d0299588"
+			},
+			"5b0c25e5-a99f-4feb-81fc-e792b2ce6a6d": {
+				"epicycloidA": 11,
+				"epicycloidB": 1,
+				"type": "epicycloid",
+				"connectionMethod": "line",
+				"x": 0,
+				"y": 0,
+				"width": 100,
+				"height": 100,
+				"aspectRatio": 1,
+				"rotation": 0,
+				"visible": true,
+				"name": "clover",
+				"effectIds": [
+					"72322ba4-ba31-42ad-9b29-a0df4a7cb10e"
+				],
+				"id": "5b0c25e5-a99f-4feb-81fc-e792b2ce6a6d"
+			}
+		}
+	},
+	"machine": {
+		"name": "[imported]",
+		"minimizeMoves": false,
+		"imported": false,
+		"type": "rectangular",
+		"minX": 0,
+		"maxX": 386,
+		"minY": 0,
+		"maxY": 716,
+		"rectOrigin": 0
+	}
+}

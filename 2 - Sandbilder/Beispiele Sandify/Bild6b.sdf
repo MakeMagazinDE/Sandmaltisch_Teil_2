@@ -1,0 +1,89 @@
+{
+	"version": "1.0.0",
+	"effects": {
+		"ids": [
+			"af4cfc71-537f-4edf-a77f-9f9c0e316ce0",
+			"af50ec00-4fce-47d4-be43-8e8edd3e4343"
+		],
+		"entities": {
+			"af4cfc71-537f-4edf-a77f-9f9c0e316ce0": {
+				"warpType": "shear",
+				"period": 10,
+				"subsample": true,
+				"xMathInput": "x + 4*sin((x+y)/20)",
+				"xMath": "x + 4*sin((x+y)/20)",
+				"yMathInput": "y + 4*sin((x-y)/20)",
+				"yMath": "y + 4*sin((x-y)/20)",
+				"rotation": 0,
+				"width": 40,
+				"height": 40,
+				"x": 0,
+				"y": 0,
+				"type": "warp",
+				"visible": false,
+				"name": "warp",
+				"aspectRatio": 1,
+				"layerId": "dc39e1e2-8709-44c0-bfd0-dd40968d37c8",
+				"id": "af4cfc71-537f-4edf-a77f-9f9c0e316ce0"
+			},
+			"af50ec00-4fce-47d4-be43-8e8edd3e4343": {
+				"transformMethod": "smear",
+				"numLoops": 70,
+				"growEnabled": true,
+				"growValue": 6,
+				"growMethod": "constant",
+				"growMathInput": "i+cos(i/2)",
+				"growMath": "i+cos(i/2)",
+				"spinEnabled": true,
+				"spinValue": 180,
+				"spinMethod": "constant",
+				"spinMathInput": "10*sin(i/4)",
+				"spinMath": "10*sin(i/4)",
+				"spinSwitchbacks": 0,
+				"type": "loop",
+				"visible": true,
+				"name": "loop",
+				"layerId": "dc39e1e2-8709-44c0-bfd0-dd40968d37c8",
+				"id": "af50ec00-4fce-47d4-be43-8e8edd3e4343"
+			}
+		}
+	},
+	"layers": {
+		"ids": [
+			"dc39e1e2-8709-44c0-bfd0-dd40968d37c8"
+		],
+		"entities": {
+			"dc39e1e2-8709-44c0-bfd0-dd40968d37c8": {
+				"circleLobes": 3,
+				"circleDirection": "clockwise",
+				"maintainAspectRatio": true,
+				"type": "circle",
+				"connectionMethod": "line",
+				"x": 0,
+				"y": 0,
+				"width": 123,
+				"height": 123,
+				"aspectRatio": 1,
+				"rotation": 0,
+				"visible": true,
+				"name": "circle",
+				"effectIds": [
+					"af4cfc71-537f-4edf-a77f-9f9c0e316ce0",
+					"af50ec00-4fce-47d4-be43-8e8edd3e4343"
+				],
+				"id": "dc39e1e2-8709-44c0-bfd0-dd40968d37c8"
+			}
+		}
+	},
+	"machine": {
+		"name": "[imported]",
+		"minimizeMoves": false,
+		"imported": false,
+		"type": "rectangular",
+		"minX": 0,
+		"maxX": 386,
+		"minY": 0,
+		"maxY": 716,
+		"rectOrigin": 0
+	}
+}

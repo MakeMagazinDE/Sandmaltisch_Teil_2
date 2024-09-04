@@ -1,0 +1,86 @@
+{
+	"version": "1.0.0",
+	"effects": {
+		"ids": [
+			"a97ca17f-f486-4724-bc68-540029bac885",
+			"4c54b99d-bbb1-4fb6-a6d5-f4036da71e65"
+		],
+		"entities": {
+			"a97ca17f-f486-4724-bc68-540029bac885": {
+				"id": "a97ca17f-f486-4724-bc68-540029bac885",
+				"name": "Loop",
+				"layerId": "fdf399c1-d19c-4ff7-a878-a32e9cd1f0a2",
+				"transformMethod": "smear",
+				"numLoops": 200,
+				"growEnabled": true,
+				"growValue": 0,
+				"growMethod": "constant",
+				"growMathInput": "i+cos(i/2)",
+				"growMath": "i+cos(i/2)",
+				"spinEnabled": false,
+				"spinValue": 2,
+				"spinMethod": "constant",
+				"spinMathInput": "10*sin(i/4)",
+				"spinMath": "10*sin(i/4)",
+				"spinSwitchbacks": 0,
+				"type": "loop",
+				"visible": true
+			},
+			"4c54b99d-bbb1-4fb6-a6d5-f4036da71e65": {
+				"width": 50,
+				"height": 50,
+				"maintainAspectRatio": true,
+				"trackShape": "spiral",
+				"trackRotation": 5540,
+				"trackSpiralRadiusPct": 8.3,
+				"trackPreserveShape": false,
+				"trackNumShapes": 5,
+				"trackShapeOrientation": "outward",
+				"type": "track",
+				"visible": true,
+				"name": "track",
+				"aspectRatio": 1,
+				"layerId": "fdf399c1-d19c-4ff7-a878-a32e9cd1f0a2",
+				"id": "4c54b99d-bbb1-4fb6-a6d5-f4036da71e65"
+			}
+		}
+	},
+	"layers": {
+		"ids": [
+			"fdf399c1-d19c-4ff7-a878-a32e9cd1f0a2"
+		],
+		"entities": {
+			"fdf399c1-d19c-4ff7-a878-a32e9cd1f0a2": {
+				"circleLobes": 1,
+				"circleDirection": "clockwise",
+				"maintainAspectRatio": true,
+				"type": "circle",
+				"connectionMethod": "line",
+				"x": 0,
+				"y": 0,
+				"width": 100,
+				"height": 100,
+				"aspectRatio": 1,
+				"rotation": 0,
+				"visible": true,
+				"name": "circle",
+				"effectIds": [
+					"a97ca17f-f486-4724-bc68-540029bac885",
+					"4c54b99d-bbb1-4fb6-a6d5-f4036da71e65"
+				],
+				"id": "fdf399c1-d19c-4ff7-a878-a32e9cd1f0a2"
+			}
+		}
+	},
+	"machine": {
+		"name": "BINGOBRICKS Sandmaltisch",
+		"minimizeMoves": false,
+		"imported": false,
+		"type": "rectangular",
+		"minX": 0,
+		"maxX": 386,
+		"minY": 0,
+		"maxY": 716,
+		"rectOrigin": 0
+	}
+}
