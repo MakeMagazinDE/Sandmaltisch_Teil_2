@@ -13,7 +13,3 @@ Einer rollenden Kugel im Sand zuzuschauen, ist mystisch und entspannend zugleich
 ![Picture](./Aufmacher.jpg) 
 
 Den vollständigen Artikel gibt es in der Make 5/24 ab Seite 86.
-
-
-
-Teil 2.
